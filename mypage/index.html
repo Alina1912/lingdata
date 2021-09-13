@@ -1,0 +1,166 @@
+<!doctype html>
+
+<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
+
+<html>
+
+<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+
+	<head>
+		<title>Личная страница Алины Шишковой</title>
+	 	<!-- Required meta tags -->
+	 	<meta charset="utf-8">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="Личная страница и контакты">
+
+		<!-- Bootstrap Core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
+
+	</head>
+	
+<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
+	<body>
+
+<!-- меню (navigation bar) -->
+
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+
+<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
+				</div> 
+				<nav class="collapse navbar-collapse" id="bs-navbar"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
+						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_1.html">Страница группы БКЛ 211</a> </li> 
+<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
+					</ul>
+				</nav> 
+			</div>
+		</nav>
+
+<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
+
+		<header style="background-color:lightskyblue; padding-top:70px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br><br>
+<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
+						<h1><font color="black">Шишкова Алина</font></h1>
+						<hr color="aliceblue"> <!-- это горизонтальная линия -->
+						<marquee><p><i><b><font color="ivory" size="4">Генератор идей и модель для их воплощения</font></b></i></p> </marquee>
+					</div>
+					<div class="col-md-4">
+<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
+<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
+<img src="https://sun9-77.userapi.com/impg/ki9ePeNnyTigPY_tEY7ascyfWDzBm4PvWwGOhA/KnPtuoCPUbs.jpg?size=1066x1600&quality=96&sign=9b026c1650f944abc6eebf15dc05f030&type=album" style="height:320px; margin:20px 20px 40px 20px; " >
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- часть страницы, которая под шапкой -->
+		<section id="portfolio">
+			<div class="container">
+
+<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
+				<div class="col-md-3">
+
+<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
+					<article>
+						<h3>Место учебы</h3>
+<hr color="aliceblue">
+
+						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
+					</article>
+					<article>
+						<h3>Родной город</h3>
+<hr color="aliceblue">
+						<p><a href="https://sun9-38.userapi.com/impg/l6vMDR7Ce9DTp0c73jydD0Y68vYwzmc_gNfSJw/vWFbpskM9pY.jpg?size=1080x701&quality=96&sign=096e9a1c01ee3df730ebab1fc243c5a6&type=album">г.Кишинев,Республика Молдова</a><div class="container"> 
+					
+				</div></p>
+
+					</article>
+					<article>
+						<h3>Школа</h3>
+<hr color="aliceblue">
+<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
+						<p>Теоретический лицей им.Н.В.Гоголя</p>
+					</article>
+				</div>
+
+				<div class="col-md-6">
+					<article>
+						<h3 align=center>Интересные факты обо мне:</h3>
+						<table border=1 bordercolor="pulm" >
+						<tr>
+<td bgcolor="honeydew" align=center><div align="center"> Я родилась и выросла в солнечном городе Кишинев,<br>столице Республики Молдова</div> </td>
+<td bgcolor="aliceblue" align=left>Владею четырьмя языками:
+<ol>
+<li>Русский</li>
+<li>Румынский</li>
+<li>Английский</li>
+<li>Немецкий</li>
+ </ol>
+В процессе изучения: французский </td>
+<td bgcolor="lavenderblush" align=center> <div align="center">Отдельным видом искусства для меня является умение находить красоту в деталях </div> </td>
+</tr>
+<tr>
+<td bgcolor="mistyrose" align=center> Люблю путешествовать и фотографировать все на глаза</td>
+<td bgcolor="azure" align=center> Первый раз посетила Россию в августе 2021 года</td>
+<td bgcolor="honeydew" align=center> Умею кататься на лыжах</td>
+</tr>
+<tr>
+<td bgcolor="mintcream" align=center> Из понравившегося прочитанного:
+<ul>
+<li align=center><i>"Алхимик" Пауло Коэльо </i></li>
+<li align=center> <i>"Расскажи мне о море" Эльчин Сафарли </i></li>
+<li align=center> <i>"Маленький принц" Антуан де Сент-Экзюпери </i></li>
+<li align=center><i> "Поющие в терновнике" Колин Маккалоу </i></li>
+<li align=center> <i>"Гордость и предубеждение" Джейн Остин </i></li></ul>
+</td>
+<td bgcolor="lightcyan" align=center> Ценю в людях:<br>чувство юмора,<br>жизнелюбие <br>и<br> честность </td>
+<td bgcolor="aliceblue" align=top> Побывала в:
+<ul>
+<li><b>Германии</b> </li>
+<li><b>Италии </b></li>
+<li><b>Греции</b></li>
+<li><b>Румынии </b></li>
+<li><b>Болгарии </b></li>
+<li> <b>на Украине </b></li>
+<li><b>Израиле </b></li>
+<li><b>Португалии </b></li>
+</tr>
+</td>
+</table>
+					</article>
+				</div>
+
+				<div class="col-md-2">
+					<h3>Я в соцсетях</h3>
+<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
+					<ul>
+						<li><a href="https://vk.com/alina.shishcova">VK</a><div class="container"> 
+					
+				</div> </li>
+						<li><a href="https://vk.com/away.php?to=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100012086317170&cc_key=">Facebook</a><div class="container"> 
+					
+				</div> </li>
+						<li><a href="https://vk.com/away.php?to=https%3A%2F%2Fwww.instagram.com%2Falina.shishcova%3Fr%3Dnametag&cc_key=">Instagram</a><div class="container"> </div> </li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
+		<footer class="bs-docs-footer"> 
+			<div class="container"> 
+				<p style="text-align:right; ">&copy; А.Шишкова, 2021</p> 
+			</div>
+		</footer>
+	</body>
+</html>
